@@ -1,7 +1,7 @@
 import './styles.css'
 const Footer = ({mensagem}) => {
     return (
-        <footer id="footer">
+        <footer>
             <p>{mensagem}</p>
         </footer>
     )
