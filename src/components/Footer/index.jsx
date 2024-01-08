@@ -1,8 +1,8 @@
 import './styles.css'
-const Footer = () => {
+const Footer = ({mensagem}) => {
     return (
         <footer id="footer">
-            <p>Desenvolvido por Francine Santos</p>
+            <p>{mensagem}</p>
         </footer>
     )
 

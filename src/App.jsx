@@ -8,7 +8,7 @@ function App() {
         <Header />
         <Form />
         <ListaDeEstudantes/>
-        <Footer/>
+        <Footer mensagem = 'Desenvolvido por Francine Santos'/>
 
     </> 
   )
