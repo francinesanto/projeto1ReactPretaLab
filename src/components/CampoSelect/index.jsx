@@ -3,7 +3,7 @@ const CampoSelect = ({label, opcoes}) => {
     return (
         <div className='campoSelect'>
             <label htmlFor="">{label}</label>
-            <select name="" id="">
+            <select name="" id="cargos">
                 {opcoes.map((elemento, index) => (
                     <option key={index} value="">{elemento}</option>
                 ))}

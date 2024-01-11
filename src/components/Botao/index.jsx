@@ -1,9 +1,9 @@
 import "./styles.css";
 
-const Botao = ({ onClick, label }) => {
+const Botao = ({ texto, acao }) => {
   return (
-    <button className="botao" onClick={onClick}>
-      {label}
+    <button className="botao" onClick={acao}>
+      {texto}
     </button>
   );
 };
