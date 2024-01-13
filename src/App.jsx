@@ -3,10 +3,24 @@ import Form from "./components/Form"
 import ListaDeEstudantes from "./components/ListaDeEstudantes"
 import Footer from "./components/Footer"
 import { estudantes } from "./data/estudantes"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 function App() {
+
+  const listaStorage = localStorage.getItem("estudantes");
+  const [lista, setLista] = useState(JSON.parse(listaStorage) || estudantes);
   
-  const [lista, setLista] = useState(estudantes)
+ // onCreate
+ useEffect(() => {
+  if (listaStorage) {
+    setLista(JSON.parse(listaStorage));
+  }
+}, []);
+
+ // onUpdate
+ useEffect(() => {
+  localStorage.setItem("estudantes", JSON.stringify(lista));
+}, [lista]);
+
   return (
     <>
         <Header />
