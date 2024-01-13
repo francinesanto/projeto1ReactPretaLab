@@ -4,6 +4,7 @@ import ListaDeEstudantes from "./components/ListaDeEstudantes"
 import Footer from "./components/Footer"
 import { estudantes } from "./data/estudantes"
 import { useState, useEffect } from "react"
+import Contador from "./components/Contador"
 function App() {
 
   const listaStorage = localStorage.getItem("estudantes");
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
         <Header />
+        <Contador />
         <Form lista = {lista} setLista = {setLista} />
         <ListaDeEstudantes lista = {lista}/>
         <Footer mensagem = 'Desenvolvido por Francine Santos'/>
