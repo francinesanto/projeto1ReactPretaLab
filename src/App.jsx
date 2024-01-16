@@ -1,36 +1,17 @@
-import Header from "./components/Header"
-import Form from "./components/Form"
-import ListaDeEstudantes from "./components/ListaDeEstudantes"
-import Footer from "./components/Footer"
-import { estudantes } from "./data/estudantes"
-import { useState, useEffect } from "react"
+import { BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./pages/Home"
 import Contador from "./components/Contador"
 function App() {
 
-  const listaStorage = localStorage.getItem("estudantes");
-  const [lista, setLista] = useState(JSON.parse(listaStorage) || estudantes);
-  
- // onCreate
- useEffect(() => {
-  if (listaStorage) {
-    setLista(JSON.parse(listaStorage));
-  }
-}, []);
-
- // onUpdate
- useEffect(() => {
-  localStorage.setItem("estudantes", JSON.stringify(lista));
-}, [lista]);
-
   return (
-    <>
-        <Header />
-        <Contador />
-        <Form lista = {lista} setLista = {setLista} />
-        <ListaDeEstudantes lista = {lista}/>
-        <Footer mensagem = 'Desenvolvido por Francine Santos'/>
-
-    </> 
+    <div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contador" element ={<Contador/>} />
+      </Routes>
+    </BrowserRouter>
+  </div>
   )
 
 }

@@ -1,7 +1,11 @@
 import Botao  from "../Botao"
 import CaixaDeTexto from "../CaixaDeTexto"
+import Menu from "../Menu"
+import Header from "../Header"
+import Footer from "../Footer"
 import Titulo from "../Titulo"
 import { useState } from "react"
+import './styles.css'
 const Contador = () => {
     //  Counter is a state initialized to 0
     const [counter, setCounter] = useState(0)
@@ -19,12 +23,19 @@ const Contador = () => {
     }
    
     return (
-        <section>
-            <Titulo texto ='Contador' />
-            <Botao texto= '+' acao={handleClick1} />
-            <CaixaDeTexto  value= {counter} placeholder={counter} />
-            <Botao texto= '-' acao={handleClick2} />
-        </section>
+        <>
+            <Menu/>
+            <Header/>
+            <section className="contador-section">
+                <h1>Contador</h1>
+                <main className="contador-main">
+                <Botao texto= '+' acao={handleClick1} />
+                <h2>{counter}</h2>
+                <Botao texto= '-' acao={handleClick2} />
+                </main>
+            </section>
+            <Footer mensagem = 'Desenvolvido por Francine Santos'/>
+        </>
     )
 }
 
