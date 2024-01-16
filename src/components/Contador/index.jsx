@@ -1,9 +1,7 @@
 import Botao  from "../Botao"
-import CaixaDeTexto from "../CaixaDeTexto"
 import Menu from "../Menu"
 import Header from "../Header"
 import Footer from "../Footer"
-import Titulo from "../Titulo"
 import { useState } from "react"
 import './styles.css'
 const Contador = () => {

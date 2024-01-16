@@ -1,4 +1,3 @@
-
 import Contador from "../components/Contador"
 
 const Contador = () => {
