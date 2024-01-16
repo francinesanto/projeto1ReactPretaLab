@@ -3,10 +3,18 @@ nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 nav a {
     color:#6278F7;
     text-decoration: none;
+    border: 1px solid #6278F7 ;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #6278F7;
+    color: #fff
 }
