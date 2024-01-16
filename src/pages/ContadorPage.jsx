@@ -1,6 +1,6 @@
 import Contador from "../components/Contador"
 
-const Contador = () => {
+const ContadorPage = () => {
     return (
         <>
              <Contador />
@@ -8,4 +8,4 @@ const Contador = () => {
     )
 }
 
-export default Contador
+export default ContadorPage
