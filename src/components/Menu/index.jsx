@@ -4,6 +4,7 @@ function Menu() {
         <nav>
             <a href="/">Home</a>
             <a href="/contador">Contador</a>
+            <a href="/sobre">Sobre</a>
         </nav>
     )
 }
