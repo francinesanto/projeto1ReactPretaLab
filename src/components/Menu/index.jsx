@@ -2,9 +2,20 @@ import "./styles.css"
 function Menu() {
     return (
         <nav>
-            <a href="/">Home</a>
-            <a href="/contador">Contador</a>
-            <a href="/sobre">Sobre</a>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/contador">Contador</a>
+                </li>
+                <li>
+                    <a href="/sobre">Sobre</a>
+                </li>
+            </ul>
+
+           
+           
         </nav>
     )
 }

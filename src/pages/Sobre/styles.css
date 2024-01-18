@@ -1,0 +1,14 @@
+.divLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.divLink a {
+    margin-top: 150px;
+    background-color: #6278F7;;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}

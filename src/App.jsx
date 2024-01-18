@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import ContadorPage from "./pages/ContadorPage"
 import ErrorPage from "./pages/ErrorPage"
+import Sobre from "./pages/Sobre"
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/contador" element ={<ContadorPage/>} />
         <Route path='*' element = {<ErrorPage/>}/>
+        <Route path='/sobre'element = {<Sobre/>}/>
       </Routes>
     </BrowserRouter>
   </div>

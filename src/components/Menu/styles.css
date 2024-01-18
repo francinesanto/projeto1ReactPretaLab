@@ -1,13 +1,14 @@
-nav {
+nav ul  {
     display: flex;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     margin-right: 15px;
     margin-bottom: 15px;
+    list-style: none;
 }
 
-nav a {
+nav ul li a {
     color:#6278F7;
     text-decoration: none;
     border: 1px solid #6278F7 ;
@@ -18,3 +19,4 @@ nav a:hover {
     background-color: #6278F7;
     color: #fff
 }
+
