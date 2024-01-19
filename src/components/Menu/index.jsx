@@ -1,22 +1,23 @@
+
 import "./styles.css"
-function Menu() {
+
+const  Menu = () => {
     return (
+        
         <nav>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a className="link" href="/"> Home </a>
                 </li>
                 <li>
-                    <a href="/contador">Contador</a>
+                    <a  className="link" href="/contador"> Contador </a>
                 </li>
                 <li>
-                    <a href="/sobre">Sobre</a>
+                    <a className="link" href="/sobre"> Sobre </a>
                 </li>
             </ul>
-
-           
-           
         </nav>
+        
     )
 }
 

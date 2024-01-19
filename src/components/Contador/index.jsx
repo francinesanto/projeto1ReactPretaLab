@@ -22,8 +22,7 @@ const Contador = () => {
    
     return (
         <>
-            <Menu/>
-            <Header/>
+            
             <section className="contador-section">
                 <h1>Contador</h1>
                 <main className="contador-main">
@@ -32,7 +31,7 @@ const Contador = () => {
                 <Botao texto= '-' acao={handleClick2} />
                 </main>
             </section>
-            <Footer mensagem = 'Desenvolvido por Francine Santos'/>
+           
         </>
     )
 }

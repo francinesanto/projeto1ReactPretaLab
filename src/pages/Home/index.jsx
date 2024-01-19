@@ -24,11 +24,8 @@ const Home = () => {
     }, [lista]);
     return (
         <>
-            <Menu/>
-            <Header />
             <Form lista = {lista} setLista = {setLista} />
             <ListaDeEstudantes lista = {lista}/>
-            <Footer mensagem = 'Desenvolvido por Francine Santos'/> 
         </> 
     )
 }

@@ -2,13 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    height: calc(100vh - 426px)
 }
 
-.divLink a {
-    margin-top: 150px;
-    background-color: #6278F7;;
-    padding: 10px;
-    color: #fff;
+main .link  {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-around;
     text-decoration: none;
+    height: calc(100vh - 500px);
+    margin: 10px;
 }
