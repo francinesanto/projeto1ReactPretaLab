@@ -5,6 +5,8 @@ import Footer from "./components/Footer"
 import ContadorPage from "./pages/ContadorPage"
 import ErrorPage from "./pages/ErrorPage"
 import Sobre from "./pages/Sobre"
+import SobreMim from "./pages/Sobre/SobreMim"
+import PokemonPage from "./pages/PokemonPage"
 function App() {
 
   return (
@@ -18,7 +20,9 @@ function App() {
         <Route path='*' element = {<ErrorPage/>}/>
         <Route path="/sobre">
           <Route index element = {<Sobre />} />
+          <Route path="sobreMim" element = {<SobreMim/>} />
         </Route>
+        <Route path="/pokemon" element = {<PokemonPage/>}/>
       </Routes>
     </BrowserRouter>
   </div>

@@ -7,14 +7,18 @@ const  Menu = () => {
         <nav>
             <ul>
                 <li>
-                    <a className="link" href="/"> Home </a>
+                    <a className="linkMenu" href="/"> Home </a>
                 </li>
                 <li>
-                    <a  className="link" href="/contador"> Contador </a>
+                    <a  className="linkMenu" href="/contador"> Contador </a>
                 </li>
                 <li>
-                    <a className="link" href="/sobre"> Sobre </a>
+                    <a className="linkMenu" href="/pokemon"> Pokemon </a>
                 </li>
+                <li>
+                    <a className="linkMenu" href="/sobre"> Sobre </a>
+                </li>
+                
             </ul>
         </nav>
         

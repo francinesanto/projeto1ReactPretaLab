@@ -5,12 +5,12 @@ import './styles.css'
 
 const  Sobre= () => {
     return (
-      <>
-        <main className="divLink">
-            <Link className="link" to="https://www.pretalab.com/" target="_blank">PretaLab</Link>
-            <Link className="link" to="">Sobre Mim</Link>
+      
+        <main className="center">
+            <Link className="link" to="https://www.pretalab.com/" target="_blank"><p>PretaLab</p></Link>
+            <Link className="link" to="/sobre/sobreMim"><p>Sobre Mim</p></Link>
         </main>
-      </>
+      
     )
 }
 
