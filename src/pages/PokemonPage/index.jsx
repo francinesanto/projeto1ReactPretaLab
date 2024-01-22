@@ -25,7 +25,7 @@ const PokemonPage = () => {
 
   
   const pegarListaDePokemons = async () => {
-    
+    setLoader(true)
     const listaTemporaria = []
     for (const referencia of refPokemons){
       try {
@@ -55,8 +55,9 @@ const PokemonPage = () => {
          id = {pokemon.id} 
          url = {pokemon.forms[0].url}
          />
-       ))}
-      {!loader && <Loader/>}
+       ))
+       }
+      {loader && <Loader/>}
       </div>
      
    )
