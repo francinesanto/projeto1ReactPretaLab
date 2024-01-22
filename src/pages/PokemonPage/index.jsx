@@ -2,11 +2,13 @@ import { useState } from "react"
 import CardPokemon from "../../components/CardPokemon"
 import axios from "axios"
 import { useEffect } from "react"
+import Loader from "../../components/Loader"
 import "./styles.css"
 const PokemonPage = () => {
   const [refPokemons, setRefPokemons] = useState([])
   const [listaPokemons, setListaPokemons] = useState([])
-  
+  const [ loader, setLoader] = useState(true)
+
   const pegar100ReferenciasPokemons = async () => {
     try{
       const resposta = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=100")
@@ -21,8 +23,9 @@ const PokemonPage = () => {
     pegar100ReferenciasPokemons()
   },[])
 
-
+  
   const pegarListaDePokemons = async () => {
+    
     const listaTemporaria = []
     for (const referencia of refPokemons){
       try {
@@ -32,8 +35,9 @@ const PokemonPage = () => {
         console.error("Erro ao buscar o pokemon", error)
       }
     }
-   
+    
     setListaPokemons(listaTemporaria)
+    setLoader(false)
   }
 
   useEffect(() => {
@@ -41,6 +45,7 @@ const PokemonPage = () => {
   }, [refPokemons])
 
 
+ 
    return (
       <div className="pokemonContainer">
        {listaPokemons.map((pokemon) => (
@@ -51,8 +56,9 @@ const PokemonPage = () => {
          url = {pokemon.forms[0].url}
          />
        ))}
+      {!loader && <Loader/>}
       </div>
-    
+     
    )
     }
 
