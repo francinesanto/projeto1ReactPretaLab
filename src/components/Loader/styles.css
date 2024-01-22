@@ -1,5 +1,21 @@
+.loader-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #bdc3e1;
+  border-top-color: #6278F7;
+  animation: loader-circle 1s linear infinite;
+}
 
-.img {
+@keyframes loader-circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.div {
   display: flex;
   justify-content: center;
   align-items: center;
