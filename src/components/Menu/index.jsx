@@ -16,6 +16,9 @@ const  Menu = () => {
                     <a className="linkMenu" href="/pokemon"> Pokemon </a>
                 </li>
                 <li>
+                    <a className="linkMenu" href="/buscaCep">Busca CEP</a>
+                </li>
+                <li>
                     <a className="linkMenu" href="/sobre"> Sobre </a>
                 </li>
                 

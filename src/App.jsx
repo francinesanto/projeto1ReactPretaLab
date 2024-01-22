@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage"
 import Sobre from "./pages/Sobre"
 import SobreMim from "./pages/Sobre/SobreMim"
 import PokemonPage from "./pages/PokemonPage"
+import CepPage from "./pages/CepPage"
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="sobreMim" element = {<SobreMim/>} />
         </Route>
         <Route path="/pokemon" element = {<PokemonPage/>}/>
+        <Route path="/buscaCep" element = {<CepPage/>} />
       </Routes>
     </BrowserRouter>
   </div>
