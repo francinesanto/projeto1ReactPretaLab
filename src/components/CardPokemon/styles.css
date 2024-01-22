@@ -2,3 +2,9 @@
     text-align: center;
     width: calc(20% - 5px);
 }
+
+ a {
+    text-decoration: none;
+    color: #6278f7;
+    font-weight: bold;
+}

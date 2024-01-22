@@ -4,7 +4,7 @@ const Loader = () => {
   return (
     
     
-    <div class="loader-circle div"></div>
+    <div className="loader-circle div"></div>
     
     )
 }
