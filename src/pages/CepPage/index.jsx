@@ -16,12 +16,13 @@ const CepPage = () => {
       setDadosCep(resposta.data);
       console.log(resposta)
     } catch (erro) {
-      console.error('Erro na requisição:', erro);
+      console.error('Todos os serviços de cep retornaram erro', erro);
     }
+    setCep('')
   };
 
    return(
-    <Box display='flex' justifyContent='center' alignItems='center' flexDirection='column' marginTop='15px' width='100vw' gap={2}p>
+    <Box display='flex' justifyContent='center' alignItems='center' flexDirection='column' marginTop='15px' width='100vw' gap={2} marginBottom='100px'>
       <Stack  alignItems='center' gap={1}>
           <Typography variant="h4">Consulte seu CEP</Typography>
           <Link href='https://brasilapi.com.br' target='_blank' underline="always"> via Brasil API</Link>
