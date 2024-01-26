@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Home from "./pages/Home"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ContadorPage from "./pages/ContadorPage"
@@ -8,6 +7,8 @@ import Sobre from "./pages/Sobre"
 import SobreMim from "./pages/Sobre/SobreMim"
 import PokemonPage from "./pages/PokemonPage"
 import CepPage from "./pages/CepPage"
+import FormPage from "./pages/FormPage"
+import Home from "./pages/Home"
 function App() {
 
   return (
@@ -16,7 +17,8 @@ function App() {
     <div>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element = {<Home />} />
+        <Route path="/form" element ={<FormPage />} />
         <Route path="/contador" element ={<ContadorPage/>} />
         <Route path='*' element = {<ErrorPage/>}/>
         <Route path="/sobre">
