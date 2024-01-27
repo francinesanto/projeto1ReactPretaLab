@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 const  Menu = () => {
@@ -7,22 +8,22 @@ const  Menu = () => {
         <nav>
             <ul>
                 <li>
-                    <a className='linkMenu' href="/"> Home</a>
+                    <Link className='linkMenu' to="/"> Home</Link>
                 </li>
                 <li>
-                    <a className="linkMenu" href="/form"> Form </a>
+                    <Link className="linkMenu" to="/form"> Form </Link>
                 </li>
                 <li>
-                    <a  className="linkMenu" href="/contador"> Contador </a>
+                    <Link className="linkMenu" to="/contador"> Contador </Link>
                 </li>
                 <li>
-                    <a className="linkMenu" href="/pokemon"> Pokemon </a>
+                    <Link className="linkMenu" to="/pokemon"> Pokemon </Link>
                 </li>
                 <li>
-                    <a className="linkMenu" href="/buscaCep">Busca CEP</a>
+                    <Link className="linkMenu" to="/buscaCep">Busca CEP</Link>
                 </li>
                 <li>
-                    <a className="linkMenu" href="/sobre"> Sobre </a>
+                    <Link className="linkMenu" to="/sobre"> Sobre </Link>
                 </li>
                 
             </ul>
