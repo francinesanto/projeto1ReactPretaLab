@@ -5,7 +5,7 @@ const Header = () => {
         <>
             <Menu />
             <div className="banner">
-                <img src="../../../public/banner.png" alt="" />
+                <img src="banner.png" alt="" />
             </div>
         </>
     )
