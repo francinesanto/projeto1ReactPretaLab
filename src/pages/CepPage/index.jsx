@@ -33,7 +33,8 @@ const CepPage = () => {
           <Button variant="contained" onClick={obterDadosCep} > Buscar </Button>
       </Stack>
 
-    {dadosCep && <Stack width='50vh' gap={2} marginTop={1}>
+    {dadosCep && 
+          <Stack width='50vh' gap={2} marginTop={1}>
           <TextField label="Rua" fullWidth readOnly value={dadosCep.street}/>
           <TextField label="Cidade" fullWidth readOnly value={dadosCep.city}/>
           <TextField label="Estado" fullWidth readOnly value={dadosCep.state}/>

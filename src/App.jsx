@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <Header />
-    <div>
-    <BrowserRouter>
+
       <Routes>
         <Route path="/" element = {<Home />} />
         <Route path="/form" element ={<FormPage />} />
@@ -28,8 +27,7 @@ function App() {
         <Route path="/pokemon" element = {<PokemonPage/>}/>
         <Route path="/buscaCep" element = {<CepPage/>} />
       </Routes>
-    </BrowserRouter>
-  </div>
+
     <Footer mensagem={'Desenvolvido por Francine Santos'}/>
     </>
   )
