@@ -1,8 +1,10 @@
 import './styles.css'
-const Footer = ({mensagem}) => {
+const Footer = () => {
     return (
         <footer>
-            <p>{mensagem}</p>
+          <a href="">  <img src="/linkedin.svg" alt="" /> </a>
+          <a href="">  <img src="/github.svg" alt="" /> </a>
+          <a href="">  <img src="/email.svg" alt="" /> </a>
         </footer>
     )
 

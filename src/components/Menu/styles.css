@@ -1,22 +1,23 @@
 nav ul  {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
     list-style: none;
+    margin-right: 40px;
 }
 
  .linkMenu {
-    color:#6278F7;
+    color:#fff;
     text-decoration: none;
-    border: 1px solid #6278F7 ;
     padding: 5px;
-    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: 'Lato';
 }
 
 .linkMenu:hover {
-    background-color: #6278F7;
-    color: #fff
+    text-decoration: overline #F7B0FF;
+    color:#fff;
+    padding: 8px;
+
 }
 

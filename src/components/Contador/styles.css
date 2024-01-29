@@ -19,3 +19,8 @@
     min-width: 40px;
     text-align: center;
   }
+
+  .contadorH2{
+    color: black;
+    font-size: 2em;
+  }

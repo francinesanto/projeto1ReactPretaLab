@@ -24,10 +24,10 @@ const Contador = () => {
         <>
             
             <section className="contador-section">
-                <h1>Contador</h1>
+                <h2 className="contadorH2">Contador</h2>
                 <main className="contador-main">
                 <Botao texto= '+' acao={handleClick1} />
-                <h2>{counter}</h2>
+                <h2 className="contadorH2" >{counter}</h2>
                 <Botao texto= '-' acao={handleClick2} />
                 </main>
             </section>

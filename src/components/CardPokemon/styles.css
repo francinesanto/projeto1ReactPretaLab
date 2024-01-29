@@ -3,8 +3,11 @@
     width: calc(20% - 5px);
 }
 
- a {
+ .pokemonItem  {
     text-decoration: none;
-    color: #6278f7;
+    color: #F7B0FF;
     font-weight: bold;
+    background-color: #000;
+    font-size: 2em;
 }
+

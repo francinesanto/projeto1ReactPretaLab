@@ -1,0 +1,30 @@
+.intro{
+  background-color: #141414;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+}
+
+h1 {
+  color: #F7B0FF;
+  font-size: 96px;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+}
+
+.pins p {
+  color: #E0E0E0;
+  font-weight: 200;
+}
+
+.detalhe1{
+  width: 100vw;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+

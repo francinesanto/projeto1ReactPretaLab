@@ -9,6 +9,7 @@ import PokemonPage from "./pages/PokemonPage"
 import CepPage from "./pages/CepPage"
 import FormPage from "./pages/FormPage"
 import Home from "./pages/Home"
+import './styles.css'
 function App() {
 
   return (

@@ -3,10 +3,15 @@ import './styles.css'
 const Header = () => {
     return (
         <>
-            <Menu />
-            <div className="banner">
-                <img src="banner.png" alt="" />
-            </div>
+           
+            <header>
+                <div className='logo'>
+                    <img src="/logo.svg" alt="" />
+                </div>  
+                <Menu />
+            </header>
+
+           
         </>
     )
 }
