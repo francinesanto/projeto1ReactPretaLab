@@ -7,8 +7,7 @@ const  Sobre= () => {
     return (
       
         <main className="center">
-            <Link className="link" to="/sobre/sobrePretaLab" target="_blank"><p>PretaLab</p></Link>
-            
+            <Link className="link" to="/sobre/sobrePretaLab" target="_blank"><p>PretaLab</p></Link>  
         </main>
       
     )
