@@ -1,3 +1,6 @@
+main{
+    margin: 60px;
+}
 h2 {
     color:#6278F7;
     text-align: center;
@@ -6,9 +9,6 @@ h2 {
 .img {
     display: flex;
     justify-content: center;
-
-}
-
-img {
-    width: 50%;
+    margin: auto;
+    width: 40vw;
 }

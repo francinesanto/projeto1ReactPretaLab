@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { Routes, Route} from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ContadorPage from "./pages/ContadorPage"
 import ErrorPage from "./pages/ErrorPage"
 import Sobre from "./pages/Sobre"
-import SobreMim from "./pages/Sobre/SobreMim"
+import SobrePretaLab from "./pages/Sobre/SobrePretaLab"
 import PokemonPage from "./pages/PokemonPage"
 import CepPage from "./pages/CepPage"
 import FormPage from "./pages/FormPage"
@@ -23,7 +23,7 @@ function App() {
         <Route path='*' element = {<ErrorPage/>}/>
         <Route path="/sobre">
           <Route index element = {<Sobre />} />
-          <Route path="sobreMim" element = {<SobreMim/>} />
+          <Route path="sobrePretaLab" element = {<SobrePretaLab/>} />
         </Route>
         <Route path="/pokemon" element = {<PokemonPage/>}/>
         <Route path="/buscaCep" element = {<CepPage/>} />
