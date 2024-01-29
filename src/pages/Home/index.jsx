@@ -55,7 +55,7 @@ const Home = () => {
           </div>
         </div>
         <div className='divLink'>
-        <Link href="/sobre">Sobre a PretaLab</Link>
+        <Link to="/sobre">Sobre a PretaLab</Link>
         </div>
       </section>
     </>
