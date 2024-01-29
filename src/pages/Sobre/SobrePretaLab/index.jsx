@@ -1,6 +1,13 @@
+import "./styles.css"
+
 const SobrePretaLab = () => {
     return(
-        <h1>Page sobre mim toDo</h1>
+        <main className="mainSobrePretaLab">
+            <div >
+                <img src="/logopreta.jpg" alt=""  className="imgPreta"/>
+            </div>
+           
+        </main>
     )
 }
 
