@@ -38,7 +38,10 @@ background-color: #F0F0F0;
   margin: 60px 60px;
   width: 50vw;
 }
-
+.desc{
+  margin: 60px 60px;
+  width: 60vw;
+}
 .perfil{
   display: flex;
   justify-content: center;
