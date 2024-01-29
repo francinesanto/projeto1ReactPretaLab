@@ -1,7 +1,7 @@
 .intro{
   background-color: #141414;
   width: 100vw;
-  height: 40vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   padding: 100px 0;
@@ -27,4 +27,82 @@ h1 {
   z-index: 1;
 }
 
+#sobreMim{
+display: flex;
+flex-direction: column;
+height: 100vh;
+background-color: #F0F0F0;
+}
+
+.titulo{
+  margin: 60px 60px;
+  width: 50vw;
+}
+
+.perfil{
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+  width: 50vw;
+}
+
+.perfil p {
+  margin:  auto;
+  width: 500px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(247,176, 255, 0.3);
+}
+h2{
+  font-size: 2em;
+  color: #F7B0FF;
+}
+
+.perfil img{
+  width: 300px;
+}
+
+#descricaoCurso{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  background-color: #141414;
+}
+
+.pin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #F7B0FF ;
+}
+
+#pinsCont{
+  background-color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.divLink{
+  background-color: #F7B0FF;
+  width: 8vw;
+  margin: 60px auto;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.divLink a{
+ text-align: center;
+ color: #141414;
+ font-size: large;
+ text-decoration: none;
+}
+
+.divLink:hover{
+  background-color: rgba(247,176, 255, 0.3);
+ }
+ 
 
