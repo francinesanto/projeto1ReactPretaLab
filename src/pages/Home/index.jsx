@@ -34,7 +34,7 @@ const Home = () => {
 
       <section id='descricaoCurso'>   
         <div className='desc'>
-            <h2>Ciclo formativo PretaLab</h2>
+            <h2>ciclo formativo PretaLab</h2>
         </div>
 
         <div id='pinsCont'>
