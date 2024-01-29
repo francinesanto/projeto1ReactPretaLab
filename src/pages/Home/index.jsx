@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 
 const Home = () => {
@@ -54,7 +55,7 @@ const Home = () => {
         </div>
       </div>
       <div className='divLink'>
-       <a href="/sobre">Sobre a PretaLab</a>
+       <Link href="/sobre">Sobre a PretaLab</Link>
       </div>
       </section>
     </>
