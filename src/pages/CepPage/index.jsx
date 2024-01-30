@@ -7,7 +7,6 @@ import  Link  from "@mui/material/Link"
 import  TextField  from "@mui/material/TextField"
 import  Button  from "@mui/material/Button"
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { lime, purple } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
@@ -51,12 +50,12 @@ const CepPage = () => {
 
       {dadosCep && 
             <Stack width='50vh' gap={2} marginTop={1}>
-            <TextField label="Rua" fullWidth readOnly value={dadosCep.street}/>
-            <TextField label="Cidade" fullWidth readOnly value={dadosCep.city}/>
-            <TextField label="Estado" fullWidth readOnly value={dadosCep.state}/>
-            <TextField label="Latitude" fullWidth readOnly value={dadosCep.location.coordinates.latitude}/>
-            <TextField label="Longitude" fullWidth readOnly value={dadosCep.location.coordinates.longitude}/>
-        </Stack>
+              <TextField label="Rua" fullWidth readOnly value={dadosCep.street}/>
+              <TextField label="Cidade" fullWidth readOnly value={dadosCep.city}/>
+              <TextField label="Estado" fullWidth readOnly value={dadosCep.state}/>
+              <TextField label="Latitude" fullWidth readOnly value={dadosCep.location.coordinates.latitude}/>
+              <TextField label="Longitude" fullWidth readOnly value={dadosCep.location.coordinates.longitude}/>
+            </Stack>
       }
       </Box>
     </ThemeProvider>
