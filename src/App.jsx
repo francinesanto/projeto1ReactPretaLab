@@ -29,7 +29,7 @@ function App() {
         <Route path="/buscaCep" element = {<CepPage/>} />
       </Routes>
 
-    <Footer mensagem={'Desenvolvido por Francine Santos'}/>
+    <Footer />
     </>
   )
 

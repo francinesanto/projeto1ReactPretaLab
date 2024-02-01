@@ -51,7 +51,7 @@ const Home = () => {
             <h3>React</h3>
           </div>
           <div className='pin'>
-            <h3>Testes com Jest</h3>
+            <h3>Testes com Vitest</h3>
           </div>
         </div>
         <div className='divLink'>
